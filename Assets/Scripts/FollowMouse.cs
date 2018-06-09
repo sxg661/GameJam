@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour {
 
     private Vector3 mousePosition;
-    public float moveSpeed = 10f;
+    public float moveSpeed = 100f;
     Animator anim;
 
     
