@@ -7,6 +7,7 @@ public class FollowMouse : MonoBehaviour {
     private Vector3 mousePosition;
     public float moveSpeed = 100f;
     Animator anim;
+    public GameController gameController;
 
     
     // Use this for initialization

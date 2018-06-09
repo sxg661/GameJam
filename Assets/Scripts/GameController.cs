@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
+    public int score;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +15,9 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void addToScore()
+    {
+        score += 100;
+    }
 }
