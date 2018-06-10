@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114340852101886002}
   - component: {fileID: 61408414771505786}
   m_Layer: 0
-  m_Name: Mole 1
+  m_Name: Mole
   m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
+  moleSpawner: {fileID: 0}
 --- !u!212 &212830446417286194
 SpriteRenderer:
   m_ObjectHideFlags: 1

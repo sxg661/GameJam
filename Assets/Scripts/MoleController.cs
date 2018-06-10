@@ -7,6 +7,7 @@ using System.Threading;
 public class MoleController : MonoBehaviour {
 
     public GameController gameController;
+    public MoleSpawner moleSpawner;
     Animator anim;
     private Vector3 mousePosition;
     private int n;
