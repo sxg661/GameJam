@@ -13,6 +13,7 @@ public class FollowMouse : MonoBehaviour {
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+        gameController.addToScore();
     }
 	
 	// Update is called once per frame
