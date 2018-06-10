@@ -18,7 +18,12 @@ public class MoleSpawner : MonoBehaviour {
 	void Update () {
 		if (n%10 == 0 && numMolesUp < minMoles){
             System.Random rnd = new System.Random();
-            int rnum = rnd.Next(0, 200);
+            int rnum = rnd.Next(0, 100);
+            if(rnum == 3)
+            {
+                rnum = rnd.Next(0, 4);
+                moles[rnum] = true;
+            }
         }
 	}
 
@@ -39,6 +44,6 @@ public class MoleSpawner : MonoBehaviour {
 
     public void retract(int moleId)
     {
-
+        moles[moleId] = false;
     }
 }

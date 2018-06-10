@@ -11,6 +11,7 @@ public class MoleController : MonoBehaviour {
     Animator anim;
     private Vector3 mousePosition;
     private int n;
+    private int id;
 
     enum State { Hidden, Up, Hurt };
 
@@ -22,6 +23,7 @@ public class MoleController : MonoBehaviour {
         state = State.Hidden;
         anim = GetComponent<Animator>();
         n = 0;
+        id = anim.GetInteger("ID");
     }
 	
 	// Update is called once per frame
@@ -30,12 +32,8 @@ public class MoleController : MonoBehaviour {
         switch (state)
         {
             case State.Hidden:
-                System.Random rnd = new System.Random();
-                int rnum = rnd.Next(0, 100);
-                n++;
-                if(rnum == 19 & n%10 == 0){
+                if (moleSpawner.checkUp(id)){
                     state = State.Up;
-                    anim.SetTrigger("MolePopUp");
                 }
                 break;
             case State.Up:
@@ -64,6 +62,8 @@ public class MoleController : MonoBehaviour {
             n = 0;
             state = State.Hurt;
             anim.SetTrigger("MoleHit");
+
+          
         }
         
     }
