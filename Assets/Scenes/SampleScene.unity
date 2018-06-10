@@ -164,7 +164,7 @@ SpriteRenderer:
   m_SortingLayerID: 961523173
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 85eaa1445ef575f438cfaba069b33f55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0020a887d7d3cfc469aec383c4097fef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -230,6 +230,16 @@ Prefab:
       propertyPath: m_Name
       value: Mole (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: moleSpawner
+      value: 
+      objectReference: {fileID: 1104208181}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1177794662}
     m_RemovedComponents:
     - {fileID: 95246390796592660, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
@@ -347,6 +357,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1177794662}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: moleSpawner
+      value: 
+      objectReference: {fileID: 1104208181}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
   m_IsPrefabParent: 0
@@ -466,6 +486,16 @@ Prefab:
       propertyPath: m_Name
       value: Mole (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: moleSpawner
+      value: 
+      objectReference: {fileID: 1104208181}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1177794662}
     m_RemovedComponents:
     - {fileID: 95246390796592660, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
@@ -513,6 +543,16 @@ Prefab:
       propertyPath: m_Name
       value: Mole (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: moleSpawner
+      value: 
+      objectReference: {fileID: 1104208181}
+    - target: {fileID: 114340852101886002, guid: 27d2352e3a2c6df45a434456dcd34ba0,
+        type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1177794662}
     m_RemovedComponents:
     - {fileID: 95246390796592660, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 27d2352e3a2c6df45a434456dcd34ba0, type: 2}
@@ -587,6 +627,46 @@ Prefab:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 41a02a57cb6016247be8dd24bb5d9f7c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1104208180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1104208182}
+  - component: {fileID: 1104208181}
+  m_Layer: 0
+  m_Name: MoleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1104208181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104208180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ca8f5fe3fb7784e937505573bc1835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1104208182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104208180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2041667, y: 0.7600722, z: 0.30155635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1149682425
 GameObject:
   m_ObjectHideFlags: 0

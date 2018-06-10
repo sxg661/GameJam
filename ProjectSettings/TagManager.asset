@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mole
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - Background
   - Players
+  - Background
   - 
   - 
   - 
@@ -38,6 +39,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3500994341
+    locked: 0
+  - name: Moles
+    uniqueID: 4145617583
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bench
+    uniqueID: 961523173
+    locked: 0
+  - name: Player
+    uniqueID: 3753629211
     locked: 0
